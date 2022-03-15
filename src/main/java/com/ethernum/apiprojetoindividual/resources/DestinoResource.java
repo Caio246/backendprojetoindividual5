@@ -19,8 +19,8 @@ import com.ethernum.apiprojetoindividual.services.DestinoService;
 
 
 @RestController
-@RequestMapping("/Destino")
-@CrossOrigin(origins = "http://localhost:3000/Destino")
+@RequestMapping("/destino")
+@CrossOrigin(origins = "*")
 public class DestinoResource {
 		
 	@Autowired 

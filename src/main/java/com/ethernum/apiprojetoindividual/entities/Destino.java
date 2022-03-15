@@ -18,11 +18,11 @@ public class Destino {
 	private String email;
 	private String localdepartida;
 	private String localdedestino;
-	private Double datadepartida;
-	private Double datadechegada;
+	private String datadepartida;
+	private String datadechegada;
 	
 	public Destino(Long id, String nome, Long telefone, Double cpf, String email, String localdepartida,
-			String localdedestino, Double datedepartida, Double datadechegada) {
+			String localdedestino, String datadepartida, String datadechegada) {
 		
 		this.id = id;
 		this.nome = nome;
@@ -31,7 +31,7 @@ public class Destino {
 		this.email = email;
 		this.localdepartida = localdepartida;
 		this.localdedestino = localdedestino;
-		this.datadepartida = datedepartida;
+		this.datadepartida = datadepartida;
 		this.datadechegada = datadechegada;
 	}
 	
@@ -96,19 +96,19 @@ public class Destino {
 		this.localdedestino = localdedestino;
 	}
 
-	public Double getDatedepartida() {
+	public String getDatedepartida() {
 		return datadepartida;
 	}
 
 	public void setDatedepartida(Double datedepartida) {
-		this.datadepartida = datedepartida;
+		this.datadepartida = datadepartida;
 	}
 
-	public Double getDatadechegada() {
+	public String getDatadechegada() {
 		return datadechegada;
 	}
 
-	public void setDatadechegada(Double datadechegada) {
+	public void setDatadechegada(String datadechegada) {
 		this.datadechegada = datadechegada;
 	}
 

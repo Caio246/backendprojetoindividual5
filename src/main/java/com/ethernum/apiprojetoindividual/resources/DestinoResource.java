@@ -31,6 +31,11 @@ public class DestinoResource {
 		return service.findAll();
 	}
 	
+	@GetMapping("/{id}")
+	public ResponseEntity<?> findById(@PathVariable Long id){
+		return ResponseEntity.ok().body(service.getById(id));
+	}
+	
 	@PostMapping
 	public ResponseEntity<Destino> save(@RequestBody Destino destino){
 		service.save(destino);
@@ -50,21 +55,3 @@ public class DestinoResource {
 		return ResponseEntity.ok().body(destino);
 	}
 }
-
-/* 
- Controlador Rest
-
-
-@RestController
-@RequestMapping("/destino")
-public class DestinoResource {
-		
-	@Autowired   Injectar
-	private DestinoService service; Ou GetMapping - Ele informa que é uma transação, diz que vai acessar o banco de dados. 
-		
-	@GetMapping("/")
-	public List<Destino> findAll(){
-		return service.findAll();
-	}
-}
-*/

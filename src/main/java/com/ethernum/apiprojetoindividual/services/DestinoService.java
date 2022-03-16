@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.ethernum.apiprojetoindividual.entities.Destino;
 import com.ethernum.apiprojetoindividual.repositories.DestinoRepository;
 
+
 @Service
 public class DestinoService {
 

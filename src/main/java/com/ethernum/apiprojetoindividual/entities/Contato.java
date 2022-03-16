@@ -1,4 +1,3 @@
-
 package com.ethernum.apiprojetoindividual.entities;
 
 import java.util.Objects;

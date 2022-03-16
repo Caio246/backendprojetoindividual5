@@ -15,7 +15,6 @@ public class Promocoes {
 	private String lugar;
 	
 	public Promocoes(Long id, String lugar) {
-		super();
 		this.id = id;
 		this.lugar = lugar;
 	}

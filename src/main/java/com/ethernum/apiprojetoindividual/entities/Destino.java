@@ -100,7 +100,7 @@ public class Destino {
 		return datadepartida;
 	}
 
-	public void setDatedepartida(Double datedepartida) {
+	public void setDatedepartida(String datadepartida) {
 		this.datadepartida = datadepartida;
 	}
 
